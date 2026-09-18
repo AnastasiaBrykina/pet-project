@@ -6,6 +6,15 @@ import svgr from 'vite-plugin-svgr'
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    rolldownOptions: {
+      output: {
+        minify: {
+          compress: { dropConsole: true },
+        },
+      },
+    },
+  },
   plugins: [
     react(),
     imagetools(),
