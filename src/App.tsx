@@ -2,6 +2,7 @@ import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
+import ilustration from './assets/pictures/ilustration.png?w=1600&format=avif;webp;png&as=picture'
 import './App.css'
 
 function App() {
@@ -26,6 +27,13 @@ function App() {
         >
           Count is {count}
         </button>
+        <div className="ilustration">
+          <picture>
+            <source srcSet={ilustration.sources.avif} type='image/avif' />
+            <source srcSet={ilustration.sources.webp} type='image/webp' />
+            <img alt='горы' src={ilustration.img.src} />
+          </picture>
+        </div>
       </section>
     </>
   )
