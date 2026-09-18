@@ -90,6 +90,18 @@
   }
 }
 
+.icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  .starIcon {
+    width: 30px;
+    height: 30px;
+    fill: yellow;
+  }
+}
+
 
 
 

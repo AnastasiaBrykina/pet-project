@@ -2,6 +2,7 @@ import react from '@vitejs/plugin-react'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { imagetools } from 'vite-imagetools'
 import { defineConfig } from 'vite'
+import svgr from 'vite-plugin-svgr'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -20,5 +21,6 @@ export default defineConfig({
         quality: 80,
       },
     }),
+    svgr(),
   ],
 })

@@ -3,6 +3,7 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import ilustration from './assets/pictures/ilustration.png?w=1600&format=avif;webp;png&as=picture'
+import StarIcon from './assets/icons/star.svg?react'
 import './App.css'
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
         >
           Count is {count}
         </button>
+        <div className="icons">
+          <StarIcon />
+          <StarIcon className='starIcon' />
+        </div>
         <div className="ilustration">
           <picture>
             <source srcSet={ilustration.sources.avif} type='image/avif' />
