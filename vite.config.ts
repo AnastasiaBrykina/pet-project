@@ -12,6 +12,11 @@ export default defineConfig({
         minify: {
           compress: { dropConsole: true },
         },
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            return 'vendor'
+          }
+        },
       },
     },
   },
