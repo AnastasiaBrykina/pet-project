@@ -3,10 +3,12 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { imagetools } from 'vite-imagetools'
 import { defineConfig } from 'vite'
 import svgr from 'vite-plugin-svgr'
+import browserslistToEsbuild from 'browserslist-to-esbuild'
 
 // https://vite.dev/config/
 export default defineConfig({
   build: {
+    target: browserslistToEsbuild(),
     rolldownOptions: {
       output: {
         minify: {
