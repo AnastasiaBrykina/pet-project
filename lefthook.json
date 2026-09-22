@@ -1,4 +1,5 @@
 {
+	"glob_matcher": "doublestar",
 	"output": ["summary", "empty_summary", "execution", "skips"],
 	"pre-commit": {
 		"parallel": true,
@@ -9,7 +10,7 @@
 				"stage_fixed": true
 			},
 			"tsc": {
-				"glob": "{src,declarations}/**/*.{ts,tsx}",
+				"glob": "{src}/**/*.{ts,tsx}",
 				"run": "npm run lint:types"
 			}
 		}
