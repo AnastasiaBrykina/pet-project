@@ -9,7 +9,7 @@
 		"preview": "vite preview",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --write",
-		"typecheck": "tsc -b"
+		"lint:types": "tsc -b"
 	},
 	"dependencies": {
 		"core-js": "^3.50.0",
@@ -23,6 +23,7 @@
 		"@types/react-dom": "^19.2.7",
 		"@vitejs/plugin-react": "^6.1.1",
 		"browserslist-to-esbuild": "^2.1.1",
+		"lefthook": "^2.1.14",
 		"sharp": "^0.35.4",
 		"typescript": "~6.0.2",
 		"vite": "^8.3.0",

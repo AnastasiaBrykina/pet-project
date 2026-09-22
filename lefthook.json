@@ -1,0 +1,17 @@
+{
+	"output": ["summary", "empty_summary", "execution", "skips"],
+	"pre-commit": {
+		"parallel": true,
+		"commands": {
+			"lint": {
+				"glob": "src/**/*.{js,jsx,ts,tsx}",
+				"run": "npm run lint:fix -- {staged_files}",
+				"stage_fixed": true
+			},
+			"tsc": {
+				"glob": "{src,declarations}/**/*.{ts,tsx}",
+				"run": "npm run lint:types"
+			}
+		}
+	}
+}
