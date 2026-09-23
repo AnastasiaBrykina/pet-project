@@ -11,6 +11,9 @@
 
 		/* Bundler mode */
 		"moduleResolution": "bundler",
+		"paths": {
+			"@features/*": ["./src/features/*"]
+		},
 		"verbatimModuleSyntax": true,
 		"moduleDetection": "force",
 		"noEmit": true,

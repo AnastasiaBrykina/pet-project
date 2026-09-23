@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { CounterButton } from '@features/counterButton';
 import heroImg from './assets/hero.png';
 import StarIcon from './assets/icons/star.svg?react';
 import ilustration from './assets/pictures/ilustration.png?w=1600&format=avif;webp;jpg&as=picture';
@@ -7,8 +7,6 @@ import viteLogo from './assets/vite.svg';
 import './App.css';
 
 function App() {
-	const [count, setCount] = useState<number>(0);
-
 	return (
 		<section id="center">
 			<div className="hero">
@@ -20,14 +18,7 @@ function App() {
 				<h1 className="font-roboto">Шрифт font-roboto</h1>
 				<h1 className="font-fira-sans">Шрифт font-fira-sans</h1>
 			</div>
-			<button
-				type="button"
-				className="counter"
-				data-testid="counter-button"
-				onClick={() => setCount((count) => count + 1)}
-			>
-				Count is {count}
-			</button>
+			<CounterButton />
 			<div className="icons">
 				<StarIcon title="Star icon" />
 				<StarIcon className="star-icon" title="Star icon" />
