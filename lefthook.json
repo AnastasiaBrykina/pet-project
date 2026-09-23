@@ -1,6 +1,13 @@
 {
 	"glob_matcher": "doublestar",
 	"output": ["summary", "empty_summary", "execution", "skips"],
+	"commit-msg": {
+		"commands": {
+			"commitlint": {
+				"run": "npx commitlint --edit {1}"
+			}
+		}
+	},
 	"pre-commit": {
 		"parallel": true,
 		"commands": {

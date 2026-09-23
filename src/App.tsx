@@ -29,7 +29,7 @@ function App() {
 			</button>
 			<div className="icons">
 				<StarIcon title="Star icon" />
-				<StarIcon className="starIcon" title="Star icon" />
+				<StarIcon className="star-icon" title="Star icon" />
 			</div>
 			<div className="ilustration">
 				<picture>
