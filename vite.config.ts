@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import react from '@vitejs/plugin-react';
 import browserslistToEsbuild from 'browserslist-to-esbuild';
 import { defineConfig } from 'vite';
@@ -39,4 +40,9 @@ export default defineConfig({
 		}),
 		svgr(),
 	],
+	test: {
+		environment: 'jsdom',
+		globals: true,
+		setupFiles: ['./src/test/setup.ts'],
+	},
 });

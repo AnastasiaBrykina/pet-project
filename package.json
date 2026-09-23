@@ -13,7 +13,7 @@
 		"lint:types": "tsc -b",
 		"lint:css": "stylelint \"src/**/*.css\"",
 		"lint:css:fix": "stylelint \"src/**/*.css\" --fix",
-		"lint:commit": "commitlint --from HEAD~1 --to HEAD"
+		"test": "vitest run"
 	},
 	"dependencies": {
 		"core-js": "^3.50.0",
@@ -24,11 +24,15 @@
 		"@biomejs/biome": "2.5.14",
 		"@commitlint/cli": "^21.2.3",
 		"@commitlint/config-conventional": "^21.2.3",
+		"@testing-library/jest-dom": "^7.0.1",
+		"@testing-library/react": "^16.3.3",
+		"@testing-library/user-event": "^14.6.7",
 		"@types/node": "^24.13.3",
 		"@types/react": "^19.2.18",
 		"@types/react-dom": "^19.2.7",
 		"@vitejs/plugin-react": "^6.1.1",
 		"browserslist-to-esbuild": "^2.1.1",
+		"jsdom": "^30.1.1",
 		"lefthook": "^2.1.14",
 		"sharp": "^0.35.4",
 		"stylelint": "^17.15.0",
@@ -37,6 +41,7 @@
 		"vite": "^8.3.0",
 		"vite-imagetools": "^12.0.1",
 		"vite-plugin-image-optimizer": "^2.0.3",
-		"vite-plugin-svgr": "^5.2.0"
+		"vite-plugin-svgr": "^5.2.0",
+		"vitest": "^5.0.1"
 	}
 }

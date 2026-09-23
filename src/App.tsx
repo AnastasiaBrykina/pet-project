@@ -23,6 +23,7 @@ function App() {
 			<button
 				type="button"
 				className="counter"
+				data-testid="counter-button"
 				onClick={() => setCount((count) => count + 1)}
 			>
 				Count is {count}
